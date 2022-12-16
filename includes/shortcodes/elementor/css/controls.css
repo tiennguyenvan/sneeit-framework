@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2021, 11:32:55 AM
+    Author     : Administrator
+*/
+.sneeit-elementor-control-visual-wrapper > input{
+	display: none;
+}
+.sneeit-elementor-control-visual-wrapper > * {
+	cursor: pointer;
+}
+.sneeit-elementor-control-visual-label {
+	border: 5px solid #0002;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+.sneeit-elementor-control-visual-label.active {
+	border-color: red;
+}

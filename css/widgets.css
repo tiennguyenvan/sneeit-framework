@@ -1,0 +1,193 @@
+.clear {
+	display: block;
+	float: none;
+	clear: both;
+}
+.ui-tooltip {
+	position: fixed;
+}
+.sneeit-widget-tooltip {
+	background: #333;
+	color: #fff;
+	padding: 20px;
+}
+/*custom sidebar*/
+.sneeit-add-sidebar-form-inner {
+	margin: 10px 0 0 0;
+}
+.sneeit-add-sidebar-form-inner label {
+	font-size: 12px;
+	line-height: 2em;
+}
+.sneeit-add-sidebar-form-inner label span {
+	display: block!important;
+}
+.sneeit-add-sidebar-form-inner .left-col {
+	width: 60%;
+	float: left;
+}
+.sneeit-add-sidebar-form-inner .right-col {
+	width: 37%;
+	float: right;
+}
+#sneeit-add-sidebar-input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	font-weight: bold;
+	color: black;
+	font-size: 17px;
+	margin: 0;
+}
+#sneeit-add-sidebar-format {
+	display: block;
+	width: 100%;
+	padding: 11px;
+	height: auto;
+	margin: 0;
+	cursor: pointer;
+}
+#sneeit-add-sidebar-form {
+	display: none;
+}
+#sneeit-add-sidebar-form a {
+	display: inline-block;
+	margin: 15px 15px 0 0;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+}
+#sneeit-add-sidebar-cancel {
+	background: white;
+	color: black;
+}
+#sneeit-add-sidebar-cancel:hover {
+	background: black;
+	color: white;
+}
+.sidebar-actions {
+	padding: 0 7px 20px 7px;
+}
+.widgets-holder-wrap.closed .sidebar-actions {
+	display: none;
+}
+.sidebar-actions a {
+	display: inline-block;
+	border: 1px solid;
+	text-decoration: none;
+	padding: 5px 10px;
+	margin: 0 10px 0 0;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.sidebar-actions a:hover {
+	background: lightyellow;
+}
+.sneeit-custom-sidebar-action-loading-icon {
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+}
+.sneeit-add-sidebar-error span {
+	border: 1px solid darkred;
+	background: lightpink;
+	color: darkred;
+	font-weight: bold;
+	padding: 10px 15px;
+	display: block;
+	margin: 10px 0;
+}
+
+/*widgets*/
+.widget.open {
+	margin-left: 0px!important;
+}
+.widget-title-action a {
+	cursor: pointer;
+}
+.widgets-holder-wrap .widget-inside {
+	padding: 1px 0 0 0;
+}
+.widgets-holder-wrap .widget-content > p {
+	padding: 0 15px;
+}
+.widget-control-actions {
+	padding: 15px;
+	background: #f0f0f0;
+	border-bottom: 1px solid #aaa;
+}
+.widget-control-actions .alignleft {
+	margin: 5px 0 0 0;
+}
+.widget.open .widget-top {
+	background: #666;
+}
+
+.widget.open .widget-top .widget-title h3, 
+.widget.open .widget-top .widget-title h4,
+.widget.open .widget-top a {	
+	color: #eee!important;
+}
+.widget.open .widget-top .widget-title h3 span, 
+.widget.open .widget-top .widget-title h4 span {
+	color: #ccc!important;
+}
+.sneeit-widget-title {
+	margin-bottom: -15px;
+	margin-top: -1px;
+	padding: 15px;
+	background: #f0f0f0;
+	font-weight: bold;
+	color: black;
+}
+.sneeit-widget-title label {
+	line-height: 1em;
+	font-size: 13px;
+	margin: 0 0 5px 0;
+	display: block;
+}
+.widget.open .sneeit-control-info,
+.widget.open .sneeit-control-input {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+.widget.open .sneeit-control-input {
+	margin-top: 0.5em;
+}
+.widget.open .sneeit-control {
+	padding: 15px 15px 3px 15px;
+}
+.widget.open .sneeit-control * {
+	font-size: 13px!important;
+}
+.widget.open .sneeit-control-description {
+	font-size: 12px!important;
+}
+
+.widget.open .sneeit-control label {
+	font-weight: normal;
+}
+.widget.open .widget-control-actions.fixed {
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+.widget.open .sneeit-control-reset-button {
+	/*display: none!important;*/
+}
+.nav-menu-widget-form-controls p {
+	padding: 0 15px;
+}
+
+/* fixed: not padding in some forms */
+.widget-inside form p {
+	padding: 0 15px;
+}
+.widget-inside .media-widget-preview {
+	margin: 0 15px;
+}

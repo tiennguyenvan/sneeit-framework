@@ -1,0 +1,34 @@
+.sneeit-post-meta-box-description {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #eee;
+	font-style: italic;
+}
+.postbox .inside .sneeit-control {
+	padding: 15px 0 0 0;
+	margin: 15px 0 0 0;
+	border-top: 1px solid #eee;
+}
+.postbox .inside .sneeit-control.first {
+	padding: 0;
+	margin: 0;
+	border-top: none;
+}
+.postbox .inside .sneeit-control * {
+	font-size: 13px;	
+}
+.postbox .inside .sneeit-control-input * {
+	font-weight: normal;
+}
+.postbox .sneeit-control-description {
+	font-size: 12px!important;
+}
+#side-sortables .sneeit-control-info,
+#side-sortables .sneeit-control-input {
+	width: 100%;
+	margin: 0;
+	display: block;
+}
+#side-sortables .sneeit-control-input {
+	margin-top: 0.5em;
+}

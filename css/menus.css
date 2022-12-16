@@ -1,0 +1,30 @@
+.menu-item .sneeit-control {
+	padding: 15px 0 0 0!important;
+	margin: 15px 0 0 0;
+}
+.menu-item .sneeit-control *{
+	font-size: 13px;
+}
+.menu-item .sneeit-control-radio label {
+	margin: 0.5em 0 0 0;
+}
+.menu-item .sneeit-control-info,
+.menu-item .sneeit-control-input {
+	display: block;
+	width: 100%;	
+}
+.menu-item .sneeit-control-input {
+	margin-top: 0.5em;
+}
+.menu-item .sneeit-control-info .sneeit-control-description {
+	font-size: 12px;
+}
+.menu-item .sneeit-control-input * {
+	font-weight: normal;
+}
+.menu-item .field-move {
+	border-top: 1px solid #ddd;
+	display: block;
+	margin: 15px 0 0 0;
+	padding: 10px 0 0 0;
+}

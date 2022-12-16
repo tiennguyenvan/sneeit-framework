@@ -1,0 +1,324 @@
+#sneeit-demo-installer {
+	margin: 15px 0 0 0;
+}
+#sneeit-demo-installer .demos {
+	clear: both;
+	padding: 0 0 100px;
+}
+
+#sneeit-demo-installer .demo {
+/*	cursor: pointer;*/
+	float: left;
+	margin: 0 4% 4% 0;
+	position: relative;
+	width: 30.6%;
+	border: 1px solid #dedede;
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#sneeit-demo-installer .demo:nth-child(3n) {
+	margin-right: 0;
+}
+#sneeit-demo-installer .demo .demo-screenshot {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+#sneeit-demo-installer .demo .demo-screenshot img {
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	-webkit-transition: opacity .2s ease-in-out;
+	transition: opacity .2s ease-in-out;
+}
+#sneeit-demo-installer .demo .demo-screenshot:after {
+	content: '';
+	display: block;
+	padding-top: 66.66666%;
+}
+#sneeit-demo-installer .demo .demo-name {
+	font-size: 15px;
+	font-weight: 600;
+	height: 18px;
+	margin: 0;
+	padding: 15px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 rgba(0,0,0,.1);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: #fff;
+	background: rgba(255,255,255,.65);
+}
+#sneeit-demo-installer .demo .demo-actions {
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
+	/*opacity: 0;*/
+	-webkit-transition: opacity .1s ease-in-out;
+	transition: opacity .1s ease-in-out;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 38px;
+	padding: 9px 10px 0;
+	background: rgba(244,244,244,.7);
+	border-left: 1px solid rgba(0,0,0,.05);
+}
+#sneeit-demo-installer .demo .demo-actions .button-primary {
+	margin-right: 3px;
+}
+/*#sneeit-demo-installer .demo.build-demo {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}*/
+#sneeit-demo-installer .demo .demo-process {
+	color: #999;
+	text-decoration: none;
+	display: none;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+#sneeit-demo-installer .demo .demo-process.action {
+	display: block;
+}
+#sneeit-demo-installer .demo .demo-process span:after {
+	background: #e5e5e5;
+	background: rgba(153,153,153,.1);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	content: '\f308';
+	-webkit-font-smoothing: antialiased;
+	font: 400 74px/115px dashicons;
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	color: #999;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -50px;
+	text-indent: -4px;
+	padding: 0;
+	text-shadow: none;
+	z-index: 4;
+}
+#sneeit-demo-installer .demo .demo-process .demo-name {
+	background: none;
+	border: none;
+	text-align: center;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-weight: 400;
+	position: relative;
+	top: 0;
+	margin-top: -18px;
+	padding-top: 0;
+	padding-bottom: 48px;
+}
+#sneeit-demo-installer .demo .demo-process:after {
+	display: block;
+	content: '';
+	background: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	text-shadow: none;
+	border: 5px dashed #d5d2ca;
+	border: 5px dashed rgba(0,0,0,.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#sneeit-demo-installer .demo-process .demo-process-percent {
+	font-size: 60px;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	top: 50%;
+	line-height: 100px;
+	margin-top: -50px;
+}
+#sneeit-demo-installer .demo-process .demo-process-overlay {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 115, 170, 0.7);
+	opacity: 0.7;
+}
+#sneeit-demo-installer .demo-process .demo-process-message {
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	width: 80%;
+	left: 10%;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black;
+}
+
+#sneeit-demo-installer .demo:focus, 
+#sneeit-demo-installer .demo:hover {
+	/*cursor: pointer;*/
+}
+#sneeit-demo-installer .demo:focus .demo-screenshot, 
+#sneeit-demo-installer .demo:hover .demo-screenshot {
+	/*background: #fff;*/
+}
+#sneeit-demo-installer.rendered .demo:focus .demo-screenshot img, 
+#sneeit-demo-installer.rendered .demo:hover .demo-screenshot img {
+	/*opacity: .4;*/
+}
+#sneeit-demo-installer .demo.focus .demo-actions, 
+#sneeit-demo-installer .demo:focus .demo-actions, 
+#sneeit-demo-installer .demo:hover .demo-actions {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+}
+
+/*PROCESS*/
+#sneeit-demo-installer .demo .demo-process:focus .demo-screenshot, 
+#sneeit-demo-installer .demo .demo-process:hover .demo-screenshot {
+	background: none;
+}
+#sneeit-demo-installer .demo .demo-process.action:focus,
+#sneeit-demo-installer .demo .demo-process.action:hover,
+#sneeit-demo-installer .demo .demo-process.action:hover span:after,
+#sneeit-demo-installer .demo .demo-process.action:focus span:after{
+	color: #fff;
+	background: #0073aa;
+}
+
+#sneeit-demo-installer .demo .demo-process:focus .demo-name, 
+#sneeit-demo-installer .demo .demo-process:hover .demo-name {
+	color: #fff;
+	z-index: 2;
+}
+#sneeit-demo-installer .demo .demo-process:focus:after, 
+#sneeit-demo-installer .demo .demo-process:hover:after {
+	border-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	background: #0073aa;
+	content: '';
+}
+
+#sneeit-demo-installer .demo-process:focus:after, 
+#sneeit-demo-installer .demo-process:hover:after {
+	background: none!important;
+	border: 5px dashed #d5d2ca!important;
+	display: block;
+	content: '';
+}
+
+
+#sneeit-demo-installer .demo-process.error {
+	background: red;
+	color: white!important;
+}
+
+#sneeit-demo-installer .demo-process.error * {
+	background: none!important;
+}
+#sneeit-demo-installer .demo-process.finished {
+	background: #0073AA;
+}
+#sneeit-demo-installer .demo-process.finished .demo-process-percent {
+	z-index: 1;
+	color: white;
+}
+
+
+/*explorred list*/
+#sneeit-demo-installer .explored {
+	background: white;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+
+#sneeit-demo-installer .explored .item {
+	border-top: 1px solid #ddd;
+	padding: 15px;
+}
+#sneeit-demo-installer .explored .item a.col {
+	float: right;
+	margin: 0 0 0 1em;
+	text-decoration: none;
+}
+#sneeit-demo-installer .explored .item a.col:hover {
+	text-decoration: underline;
+}
+#sneeit-demo-installer .explored .item .name {
+	font-size: 20px;
+	font-weight: 100;
+	color: black;
+	display: inline-block;
+	vertical-align: top;
+}
+#sneeit-demo-installer .explored .item .content {
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+	margin-top: 15px;
+	display: none;
+}
+
+#sneeit-demo-installer .explored .item .content p {
+	margin: 0 0 0.5em 0;
+}
+#sneeit-demo-installer .explored .content ul li {
+	display: list-item!important;
+	list-style-type: circle;
+}
+
+#sneeit-demo-installer .explored .content ul {
+	padding: 0 0 0 15px;
+}
+#sneeit-demo-installer .explored .item .content .code {
+	background: lightyellow;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: 300px;
+	border: 1px solid #ddd;
+}
+
+#sneeit-demo-installer .explored .explored-loading-icon {
+	font-size: 100px;
+	text-align: center;
+	display: block;
+	padding: 20px 0;
+}
+#sneeit-demo-installer .explored.loading {
+	padding: 15px;
+}
+
+@media only screen and (max-width: 1120px) {
+	#sneeit-demo-installer .demo:nth-child(odd) {
+		margin-right: 5%;
+	}
+	#sneeit-demo-installer .demo {
+		width: 47.5%;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#sneeit-demo-installer .demo {
+		width: 100%;
+		margin-right: 0;
+	}
+}

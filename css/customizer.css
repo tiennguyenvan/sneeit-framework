@@ -1,0 +1,139 @@
+/*customer general*/
+.customize-pane-child {
+	z-index: 999999;
+}
+#customize-theme-controls .accordion-section-content {
+	/*background: white;*/
+}
+#customize-theme-controls .accordion-section-content .customize-control {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+}
+#customize-theme-controls .customize-control-title {
+	color: black;
+	font-weight: bold;
+}
+#customize-theme-controls .customize-section-description-container .customize-section-description {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+	font-size: 16px;
+	font-style: italic;
+	color: #999!important;
+	line-height: 1.5em;
+}
+#customize-theme-controls .accordion-section-title .icon {
+	display: inline-block;
+	width: 30px;
+	text-align: left;
+}
+#customize-theme-controls .customize-section-back,
+#customize-theme-controls .customize-panel-back{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	height: 45px!important;
+	line-height: 46px!important;
+	background: #ff8300!important;
+	width: 48px!important;
+	text-align: center!important;
+}
+#customize-theme-controls .customize-section-back:hover,
+#customize-theme-controls .customize-panel-back:hover {
+	background: #ffa700!important;
+}
+#customize-theme-controls .customize-section-back:before,
+#customize-theme-controls .customize-panel-back:before {
+	line-height: 46px!important;	
+	color: white;
+}
+#customize-theme-controls .panel-meta.customize-info .accordion-section-title {
+	margin-left: 0;
+}
+.wp-customizer .in-sub-panel .customize-controls-close,
+.wp-customizer .section-open .customize-controls-close {
+	left: 48px;
+}
+/*sneeit control*/
+.customize-control .sneeit-control {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.customize-control .sneeit-control * {
+	font-size: 13px!important;
+}
+.customize-control .sneeit-control-info .sneeit-control-description {
+	font-size: 12px!important;
+}
+.customize-control .sneeit-control-info,
+.customize-control .sneeit-control-input {
+	width: 100%;
+	margin: 0;
+	display: block;
+}
+.customize-control .sneeit-control-input {
+	margin: 0.5em 0 0 0;
+}
+.customize-control .sneeit-control-input label {
+	margin: 0;	
+}
+.customize-control .sneeit-control-input input[type="radio"],
+.customize-control .sneeit-control-input input[type="checkbox"] {
+	margin: -2px 2px 0 0;
+}
+.customize-control .sneeit-control-input * {
+	font-weight: normal;
+}
+
+/*visual picker*/
+.customize-control .sneeit-control-visual-picker {
+	margin: 0;
+}
+
+
+/*customizer image uploader*/
+.customize-control-image .remove-button {
+	width: 100%!important;
+	margin: 10px 0 0 0!important;
+	float: none;
+	font-size: 14px!important;
+	line-height: 1.5em!important;
+	height: auto!important;
+	color: #000;
+	font-weight: normal;
+	padding: 5px 0;
+}
+.customize-control-image .upload-button, 
+.customize-control-image .default-button {
+	width: 100%!important;
+	margin: 10px 0 0 0!important;
+	float: none;
+	font-size: 14px!important;
+	line-height: 1.5em!important;
+	height: auto!important;
+	color: #000;
+	font-weight: normal;
+	padding: 5px 0;
+}
+.customize-control-image .default-button {
+	margin: 0 0 10px 0!important;
+}
+.customize-control-image .actions {
+	margin-bottom: 0;
+}
+.customize-control-image .current .container {
+	border: none;
+}
+.customize-control-image .current .container .placeholder {
+	border: 1px dashed #ccc;
+	height: 40px;
+	width: auto;
+}
+
+/* customizer export / import */
+input[name="snfwto_import-file"] {
+	margin: 0 0 10px -5px;
+	display: block;
+}

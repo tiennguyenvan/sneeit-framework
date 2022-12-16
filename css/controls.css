@@ -1,0 +1,501 @@
+/* COMMON INTERFACE */
+.sneeit-control {
+	padding: 30px 0;
+	border-top: 1px solid #ddd;
+	height: auto!important;
+}
+.sneeit-control-separator {
+	margin: 1.5em 0 1.2em 0;
+	font-size: 150%!important;
+	font-weight: 100;
+	border-bottom: 3px solid #d54e21;
+	padding: 0;
+	display: block;
+}
+.widget.open .sneeit-control .sneeit-control-separator span {
+	font-size: 150%!important;
+}
+.sneeit-control-separator span {
+	display: inline-block;
+	background: #d54e21;
+	color: white;
+	padding: 10px 20px 13px 20px;
+	margin: 0 0 -2px 0;
+	line-height: 1em;
+}
+.sneeit-control-info {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	margin-right: 10%;
+}
+.sneeit-control-input {
+	display: inline-block;
+	width: 55%;
+}
+.sneeit-control-title {
+	font-weight: bold;
+	color: black;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+.sneeit-control-description {
+	font-size: 13px;
+	color: #999;
+	margin-top: 5px;
+	line-height: 1.5em;
+}
+.sneeit-control-input {
+	font-size: 14px;
+	font-weight: 100;
+}
+
+/* CONTROLS */
+.sneeit-control-reset-button {
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	display: none;
+	line-height: 1em;
+}
+.sneeit-control-reset-button:hover {
+	text-decoration: underline;
+}
+.sneeit-control:hover .sneeit-control-reset-button {
+	display: inline;
+}
+/* color */
+.sneeit-control .wp-color-result {
+	margin-bottom: 0;
+}
+#sneeit-control .wp-color-result.wp-picker-open {
+	margin-bottom: 6px;
+}
+
+/* media */
+.sneeit-control-media-input-left {
+	width: 70%;
+	
+	display: inline-block;
+	vertical-align: top;	
+	*display: block;
+	zoom: 1;
+}
+.sneeit-control-media-input-right {
+	width: 30%;
+	
+	display: inline-block;
+	vertical-align: top;	
+	*display: block;
+	zoom: 1;
+}
+.sneeit-control-media-value {
+	display: block;
+	width: 90%;
+	font-size: 16px;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 2%;
+}
+a.sneeit-control-media-upload-button {
+	height: 40px!important;
+	line-height: 38px!important;
+	padding: 0!important;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/* image */
+.sneeit-control-image-input-left {
+	width: 50%;
+	
+	display: inline-block;
+	vertical-align: top;	
+	*display: block;
+	zoom: 1;
+}
+.sneeit-control-image-input-right {
+	width: 50%;
+	
+	display: inline-block;
+	vertical-align: top;	
+	*display: block;
+	zoom: 1;
+}
+.sneeit-control-image-preview {
+	border-radius: 4px;
+	border: 2px dashed #ccc;
+	display: block;
+	width: 90%;
+	height: 86px;
+	overflow: hidden;
+	position: relative;
+}
+.sneeit-control-image-value {
+	display: block;
+	width: 100%;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 2%;
+}
+.sneeit-control-image-buttons {
+	display: block;
+	margin: 10px 0 0 0;
+}
+.sneeit-control-image-buttons a.button {
+	display: block;
+	height: 40px;
+	line-height: 38px;
+	padding: 0!important;
+	text-align: center;
+}
+.sneeit-control-image-remove-button {
+	width: 45%;
+	float: left;
+}
+.sneeit-control-image-upload-button {
+	width: 50%;
+	float: right;
+}
+.sneeit-control-image-preview img {
+	width: 100%;
+}
+.sneeit-control-image-preview .fa {
+	line-height: 86px;
+	text-align: center;
+	display: block;
+	font-size: 30px;
+	color: #ccc;
+}
+
+/* range */
+.sneeit-control-range-input-left {
+	width: 80%;
+	display: inline-block;
+	vertical-align: top;
+	*display: block;
+	zoom: 1;
+	padding: 5px 0 0 0;
+}
+.sneeit-control-range-input-right {
+	width: 20%;
+	
+	display: inline-block;
+	vertical-align: top;	
+	*display: block;
+	zoom: 1;
+}
+.sneeit-control-range-slider {
+	display: block;
+	height: 10px;
+	border: 1px solid #ccc;
+	background: white;
+	border-radius: 4px;
+	position: relative;
+}
+.sneeit-control-range-slider .ui-slider-range {
+	background: #000;
+	height: 10px;
+	border-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.sneeit-control-range-slider .ui-slider-handle {
+	height: 20px;
+	width: 20px;
+	background: white;
+	display: block;
+	position: absolute;
+	top: -5px;
+	border: 1px solid #ccc;
+	border-radius: 100%;
+	margin-left: -10px;
+}
+input.sneeit-control-range-value {
+	display: none;
+}
+.sneeit-control-range-value-number {
+	font-size: 18px;
+	font-weight: 100;
+	height: 20px;
+	line-height: 20px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+/* VISUAL */
+.sneeit-control-visual-picker {
+	display: inline-block;
+	opacity: 1;
+	padding: 0;
+	margin: 5px;
+}
+.sneeit-control-visual-picker.inactive {
+	border: 1px solid #ccc;
+	opacity: 0.7;
+}
+.sneeit-control-visual-picker.active, .sneeit-control-visual-picker.inactive:hover {
+	border: 1px solid;	
+}
+
+.sneeit-control-visual-picker img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* FONT FAMILY & FONTS */
+.sneeit-control-font-ui .font-family-value input.value {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 2%;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	background: #FFF;
+}
+.sneeit-control-font-ui .font-family-value {
+	position: relative;	
+}
+.sneeit-control-font-ui .font-family-value .drop {
+	position: absolute;
+	right: 10px;
+	top: 11px;
+	color: black;
+	text-decoration: none;
+}
+.sneeit-control-font-ui .font-family.collapsed .font-family-value .drop .icon-down {
+	display: block;
+}
+.sneeit-control-font-ui .font-family.collapsed .font-family-value .drop .icon-up {
+	display: none;
+}
+.sneeit-control-font-ui .font-family.expanded .font-family-value .drop .icon-down {
+	display: none;
+}
+.sneeit-control-font-ui .font-family.expanded .font-family-value .drop .icon-up {
+	display: block;
+}
+.sneeit-control-font-ui .font-family-list {
+    border: 1px solid #ddd;
+    border-top: none;
+    height: 200px;
+    position: relative;
+    overflow: auto;
+    background: white;
+	display: none;
+}
+.sneeit-control-font-ui .font-family-list .spliter {
+	display: block;
+	background: #f8f8f8;
+	height: 1px;
+	border-bottom: 1px solid #eee;
+}
+.sneeit-control-font-ui .font-family-item {
+    display: block;
+    padding: 5px 15px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+}
+.sneeit-control-font-ui .font-family-item.inactive {
+	color: black;
+}
+.sneeit-control-font-ui .font-family-item:focus,
+.sneeit-control-font-ui .font-family-item:hover {
+    background: #f8f8f8;
+}
+.sneeit-control-font-ui .font-family-item.active {
+    background: currentColor;
+}
+.sneeit-control-font-ui .font-family-item.active span {
+    color: white;
+	font-weight: bold;
+}
+.sneeit-control-font-ui .font-design {
+	margin: 10px 0 0 0;
+}
+.sneeit-control-font-ui .font-design .font-style-value,
+.sneeit-control-font-ui .font-design .font-weight-value {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	cursor: pointer;
+}
+.sneeit-control-font-ui .font-design .font-style-value.inactive,
+.sneeit-control-font-ui .font-design .font-weight-value.inactive {
+	color: black;
+	background: white;
+}
+.sneeit-control-font-ui .font-design .font-style-value.active {
+	font-style: italic;
+}
+.sneeit-control-font-ui .font-design .font-weight-value.active {
+	font-weight: bold;
+}
+.sneeit-control-font-ui .font-design .font-style-value.active,
+.sneeit-control-font-ui .font-design .font-weight-value.active {
+	background: currentColor;
+}
+.sneeit-control-font-ui .font-design .font-style-value.active span,
+.sneeit-control-font-ui .font-design .font-weight-value.active span {
+	color: white;
+}
+.sneeit-control-font-ui .font-design .font-size-value {
+	display: inline-block;
+	width: 70px;
+	line-height: 30px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	cursor: pointer;
+	height: 32px;
+	vertical-align: top;
+	margin: 0;
+	padding: 0 5px;
+}
+
+/* content */
+.sneeit-control #wp-content-editor-tools {
+	background: none;
+}
+.sneeit-control .wp-editor-wrap.html-active .wp-editor-area {
+	display: block!important;
+	visibility: visible!important;
+}
+.sneeit-control .wp-editor-wrap.html-active .mce-container {
+	display: none!important;
+	visibility: hidden!important;
+}
+.sneeit-control .mce-container iframe {
+	height: 250px!important;
+}
+/* RADIO */
+.sneeit-control-radio label {
+	display: block;
+	margin: 0 0 10px 0;
+}
+.sneeit-control.sneeit-control-radio {
+	padding-bottom: 20px;
+}
+
+/* BOX MODEL */
+.sneeit-control-box-model-ui {
+	border: 1px solid #ccc;
+	height: 8em;
+}
+.sneeit-control-box-model-ui-cell {
+	float: left;
+	text-align: center;
+	width: 33.333%;
+	vertical-align: middle;
+}
+.sneeit-control-box-model-ui-cell input {
+	display: inline-block;
+	width: 2em;
+	padding: 0;
+	margin: 5px 0 0 0;	
+	border: none;
+	text-align: center;	
+	vertical-align: middle;
+	background: #ffffe0;
+	cursor: pointer;
+}
+.sneeit-control-box-model-ui-cell input[class*="-unit"] {	
+	background: #eee;
+}
+.sneeit-control-box-model-ui-cell.cell-top,
+.sneeit-control-box-model-ui-cell.cell-bottom,
+.sneeit-control-box-model-ui-cell.cell-top-left,
+.sneeit-control-box-model-ui-cell.cell-top-right,
+.sneeit-control-box-model-ui-cell.cell-bottom-left,
+.sneeit-control-box-model-ui-cell.cell-bottom-right {
+	height: 2em;
+}
+.sneeit-control-box-model-ui-cell.cell-left,
+.sneeit-control-box-model-ui-cell.cell-right,
+.sneeit-control-box-model-ui-cell.cell-middle-center {
+	height: 4em;		
+}
+.sneeit-control-box-model-ui-cell.cell-left input,
+.sneeit-control-box-model-ui-cell.cell-right input {
+	height: 1.4em!important;
+	margin: 1.3em 0 0 0;
+}
+.sneeit-control-box-model-ui-cell-middle-center-inner {
+	border: 1px dashed #ccc;	
+	height: 100%;
+}
+
+/* other */
+input.sneeit-control-text-value,
+input.sneeit-control-number-value,
+input.sneeit-control-email-value,
+input.sneeit-control-url-value,
+.sneeit-control select,
+.sneeit-control .chosen-choices,
+textarea.sneeit-control-textarea-value {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 2%;
+	border: 1px solid #ccc!important;
+	box-shadow: none!important;
+	background-image: none!important;
+}
+.sneeit-control select,
+.sneeit-control .chosen-choices {
+	cursor: pointer;	
+}
+.sneeit-control select.ajax {
+	display: none;
+}
+textarea.sneeit-control-textarea-value {
+	height: auto;
+	line-height: 1.5em;
+	padding: 0 1%;
+}
+.sneeit-control .chosen-container-single .chosen-single {
+	padding: 0 2%!important;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	background: #fff;
+	box-shadow: none;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+.sneeit-control .chosen-container-single .chosen-single div b {
+	background-position: 0px 10px;
+}
+.sneeit-control .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+	padding: 0!important;
+	margin: 0!important;
+	font-weight: 100;
+	color: #666;
+	min-width: 150px;
+}
+.sneeit-control .chosen-container-multi .chosen-choices li.search-choice {
+	margin: 10px 5px 0 0!important;
+	display: block;
+}

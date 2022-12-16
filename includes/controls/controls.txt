@@ -1,0 +1,114 @@
+// this file is for testing only
+'text' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+),
+'radio' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'radio',
+	'choices' => array(
+		'v1' => 'This is choice 01',
+		'v2' => 'This is choice 02',
+		'v3' => 'This is choice 03',
+	)
+),
+'select' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'select',
+	'choices' => array(
+		'v1' => 'This is choice 01',
+		'v2' => 'This is choice 02',
+		'v3' => 'This is choice 03',
+	)
+),
+'selects' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'selects',
+	'choices' => array(
+		'v1' => 'This is choice 01',
+		'v2' => 'This is choice 02',
+		'v3' => 'This is choice 03',
+	)
+),
+'checkbox' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'checkbox',				
+),
+'category' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'category'
+),
+'categories' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'categories'
+),
+'tag' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'tag'
+),
+'tags' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'tags'
+),
+'user' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'user'
+),
+'users' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'users'
+),
+'sidebar' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'sidebar'
+),
+'sidebars' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'sidebars'
+),
+'textarea' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'textarea',				
+),
+'content' => array(
+	'description' => 'DO NOT USE ID CONTENT, THATS IS NOT GOOD. You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'content'
+),
+'content-other' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'content'
+),
+'color' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'color'
+),
+'media' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'media'
+),
+'image' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'image'
+),
+'range' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'range',
+	'max' => 1000,
+	'min' => 100,
+),
+'visual' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'visual',
+	'choices' => array(
+		'v1' => 'This is choice 01',
+		'v2' => 'This is choice 02',
+		'v3' => 'This is choice 03',
+	)
+),
+'font-family' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'font-family',
+),
+'font' => array(
+	'description' => 'You must test with very long description. Just in case your display is properly and work well with <a href="#">A tag</a> or other <strong>Strong tag</strong>',
+	'type' => 'font',
+),
