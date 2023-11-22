@@ -1,5 +1,4 @@
-/*layout*/
-
+/*general admin styles*/
 i.mce-ico.mce-i-icon.fa,
 i.mce-ico.mce-i-icon.far, 
 i.mce-ico.mce-i-icon.fas {
@@ -52,3 +51,11 @@ i.mce-ico.mce-i-icon.fas {
 .opacity-0 {
 	opacity: 0;
 }
+
+
+/* 
+Full Site Editing Styles 
+- This is for changing styles of backend/control elements, but blocks
+- If you want to change styles of blocks, use editor.css or style.css instead
+which will be loaded for both back-end and front-end
+*/

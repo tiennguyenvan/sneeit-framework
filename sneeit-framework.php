@@ -38,7 +38,7 @@ define('SNEEIT_PLUGIN_URL_FONT_AWESOME',	SNEEIT_PLUGIN_URL_FONTS . 'font-awesome
 define('SNEEIT_PLUGIN_URL_FONT_AWESOME_RTL',SNEEIT_PLUGIN_URL_FONTS . 'font-awesome/css/font-awesome-rtl.min.css');
 */
 define('SNEEIT_PLUGIN_URL_FONT_AWESOME',	SNEEIT_PLUGIN_URL_FONTS . 'font-awesome-5x/css/all.min.css');
-define('SNEEIT_PLUGIN_URL_FONT_AWESOME_RTL',SNEEIT_PLUGIN_URL_FONTS . 'font-awesome-5x/css/all.min.css');
+define('SNEEIT_PLUGIN_URL_FONT_AWESOME_RTL', SNEEIT_PLUGIN_URL_FONTS . 'font-awesome-5x/css/all.min.css');
 define('SNEEIT_PLUGIN_URL_FONT_AWESOME_SHIMS',SNEEIT_PLUGIN_URL_FONTS . 'font-awesome-5x/css/v4-shims.min.css');
 
 
@@ -62,3 +62,4 @@ require_once 'includes/envato/envato-init.php';
 require_once 'includes/social/social-init.php';
 require_once 'includes/rating/rating-init.php';
 require_once 'includes/controls/controls-init.php';
+

@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * Output custom styles, design and script from the saved settings
+ */
 function sneeit_customize_cssout($setting_id, $setting_property, &$google_font_url, &$upload_font_url) {
 	if (!isset($setting_property['cssout'])) {
 		return '';

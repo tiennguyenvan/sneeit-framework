@@ -1,0 +1,2 @@
+https://mariecomet.fr/en/2021/12/14/adding-options-controls-existing-gutenberg-block/
+https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/block-controls-toolbar-and-sidebar/
