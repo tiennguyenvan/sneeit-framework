@@ -61,7 +61,8 @@ function sneeit_sneeit_theme_api($user_name, $license_key, $theme_slug) {
 		return esc_html_x('Wrong response data format. Please check your internet connection and try again. Or send email to contact@sneeit.com to request support. Thank you!', 'dashboard', 'sneeit');
 	}
 	if (!is_object($data)) {				
-		return esc_html_x('Unexpected response data. Please check your internet connection and try again. Or send email to contact@sneeit.com to request support. Thank you!', 'dashboard', 'sneeit');
+		
+		return esc_html_x('Unexpected response data. Please check your internet connection and try again. Or send email to contact@sneeit.com to request support. Thank you!' , 'dashboard', 'sneeit');
 	}
 	$data = (array) $data;
 

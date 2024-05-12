@@ -84,9 +84,9 @@ function sneeit_article_get_post_image($post_id = 0, $priority_content = '', $si
 	
 	if (!$src) {
 		// NOW, WE MUST SCAN THE FIRST IMAGE
-		if (!isset($ret[$post_id])) {
-			return $ret[$post_id];
-		}	
+		// if (!isset($ret[$post_id])) {
+		// 	return $ret[$post_id];
+		// }	
 		$src = sneeit_article_get_image_src(get_the_content());
 		
 		// found an attachment id
@@ -189,10 +189,12 @@ function sneeit_articles_archive_link($args = array()) {
 	
 	// in case not found anything
 	// just link to recent post
-	if ($link) {
-		$link = get_home_url() . $link . $paged . $post_type . $orderby;
-	} else {
-		$link = get_home_url() . '?s'.$paged . $post_type . $orderby;
-	}
+	if (!$link) $link = '?';
+	$link = get_home_url() . $link . $paged . $post_type . $orderby;
+	// if ($link) {
+	// 	$link = get_home_url() . $link . $paged . $post_type . $orderby;
+	// } else {
+	// 	$link = get_home_url() . '?s'.$paged . $post_type . $orderby;
+	// }
 	return $link;
 }
