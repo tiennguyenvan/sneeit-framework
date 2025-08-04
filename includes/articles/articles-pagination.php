@@ -53,10 +53,10 @@ function sneeit_articles_pagination($site_args) {
 function sneeit_articles_pagination_callback() {	
 	$callback = sneeit_get_server_request('callback');
 	
-	if (function_exists($callback)) {
+	if ($callback == "fn_block_pagination" && function_exists($callback)) {
 		$args = sneeit_get_server_request('args');
 		$args = json_decode( trim( wp_unslash( $args ) ), true );
-		call_user_func($callback, $args);
+		fn_block_pagination($args);
 	}
 	die();
 }
