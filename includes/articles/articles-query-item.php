@@ -179,7 +179,7 @@ class Sneeit_Articles_Query_Item {
 		// found image, just output the image link
 		if ( $src ) {
 			// maybe external image or not in library
-			$image_html = '<img src="' . esc_url( $src ) . '"';
+			$image_html = '<img loading="lazy" src="' . esc_url( $src ) . '"';
 			foreach ( $attr as $key => $value ) {
 				$image_html .= ' ' . $key . '="' . esc_attr( $value ) . '"';
 			}
@@ -216,7 +216,7 @@ class Sneeit_Articles_Query_Item {
 				
 		// if not found, we need to use default thumbnail
 		if (!$image && !empty($this->args['default_thumb'])) {
-			$image = '<img src="'.esc_url($this->args['default_thumb']).'"';
+			$image = '<img loading="lazy" src="'.esc_url($this->args['default_thumb']).'"';
 			foreach ($image_attr as $attr_name => $attr_value) {
 				$image .= ' '.$attr_name.'="'.esc_attr($attr_value).'"';
 			}
