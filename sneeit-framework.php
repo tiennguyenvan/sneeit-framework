@@ -3,7 +3,7 @@
 Plugin Name: Sneeit Framework
 Plugin URI:  
 Description: This plugin will help theme developers finish their theme faster
-Version:     8.5
+Version:     8.6
 Author:      Tien Nguyen
 Author URI:  
 License:     GPL2
@@ -12,7 +12,7 @@ Domain Path: /languages
 Text Domain: sneeit
 */
 
-define('SNEEIT_PLUGIN_VERSION', '8.5');
+define('SNEEIT_PLUGIN_VERSION', '8.6');
 /******************************************/
 
 /*DEFINES*/

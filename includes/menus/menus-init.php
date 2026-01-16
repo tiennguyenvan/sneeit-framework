@@ -18,17 +18,26 @@ include_once 'menus-enqueue.php';
 
 // INIT MENU LOCATIONS
 add_action('sneeit_setup_menu_locations', 'sneeit_menus_init_setup_menu_locations', 1, 1);
+//function sneeit_menus_init_setup_menu_locations($declaration) {
+//	global $Sneeit_Menu_Locations_Declaration;
+//	$Sneeit_Menu_Locations_Declaration = sneeit_validate_menu_locations_declaration($declaration);	
+//	add_action( 'after_setup_theme', 'sneeit_menus_init_after_setup_theme');
+//}
 function sneeit_menus_init_setup_menu_locations($declaration) {
-	global $Sneeit_Menu_Locations_Declaration;
-	$Sneeit_Menu_Locations_Declaration = sneeit_validate_menu_locations_declaration($declaration);	
-	add_action( 'after_setup_theme', 'sneeit_menus_init_after_setup_theme');
+    global $Sneeit_Menu_Locations_Declaration;
+    $Sneeit_Menu_Locations_Declaration =
+        sneeit_validate_menu_locations_declaration($declaration);
+
+    foreach ($Sneeit_Menu_Locations_Declaration as $location => $title) {
+        register_nav_menu($location, $title);
+    }
 }
-function sneeit_menus_init_after_setup_theme() {
-	global $Sneeit_Menu_Locations_Declaration;
-	foreach ($Sneeit_Menu_Locations_Declaration as $location => $title) {
-		register_nav_menu( $location, $title);
-	}
-}
+//function sneeit_menus_init_after_setup_theme() {
+//	global $Sneeit_Menu_Locations_Declaration;
+//	foreach ($Sneeit_Menu_Locations_Declaration as $location => $title) {
+//		register_nav_menu( $location, $title);
+//	}
+//}
 
 
 // INIT MENU FIELDS AND WALKER
