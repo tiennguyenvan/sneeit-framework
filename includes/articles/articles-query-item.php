@@ -7,7 +7,6 @@
  * If you want to add more flexibile feture, just start with 
  * the Object $args instead of direct $args from functions
  */
-
 class Sneeit_Articles_Query_Item {
 	var $ID = 0;
 	var $permalink = '';
@@ -43,8 +42,8 @@ class Sneeit_Articles_Query_Item {
 	
 	/**
 	 * 
-	 * @param type $extra_class
-	 * @return type
+	 * @param string $extra_class
+	 * @return string
 	 */
 	public function item_class($extra_class = '') {
 		$class = 'item item-'.$this->index;
@@ -140,9 +139,9 @@ class Sneeit_Articles_Query_Item {
 
 		// IF HAVE THUMBNAIL
 		if (has_post_thumbnail( $this->ID ) ) {
-			apply_filters( 'sneeit_articles_get_post_image_before', '');
+			//apply_filters( 'sneeit_articles_get_post_image_before', '');
 			$image_html = get_the_post_thumbnail( $this->ID, $size, $attr );
-			apply_filters( 'sneeit_articles_get_post_image_after', '');
+			//apply_filters( 'sneeit_articles_get_post_image_after', '');
 			return $image_html;
 		}
 		
@@ -168,9 +167,9 @@ class Sneeit_Articles_Query_Item {
 
 			// found an attachment id
 			if (is_numeric($src)) {				
-				apply_filters( 'sneeit_articles_get_post_image_before', '');
+				//apply_filters( 'sneeit_articles_get_post_image_before', '');
 				$image_html = wp_get_attachment_image($src, $size, false, $attr);
-				apply_filters( 'sneeit_articles_get_post_image_after', '');
+				//apply_filters( 'sneeit_articles_get_post_image_after', '');
 				return $image_html;
 			}
 		}
@@ -200,7 +199,8 @@ class Sneeit_Articles_Query_Item {
 		
 		// element attributes
 		$image_attr = array(
-			'alt' => $this->title_esc_attr
+			'alt' => $this->title_esc_attr,
+			'loading' => 'lazy', // WordPress auto adds sizes=`auto, (max-width: 150px) 100vw, 150px` if lazy loading is enabled
 		);
 		$image_attr = wp_parse_args($image_attr, $this->args['thumb_img_attr']);
 				
