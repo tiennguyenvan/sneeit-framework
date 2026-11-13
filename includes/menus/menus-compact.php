@@ -485,13 +485,33 @@ function sneeit_display_compact_menu_action($theme_location) {
 }
 
 function sneeit_compact_menu_mega_content_callback() {		
-	$callback = sneeit_get_server_request('callback');
-	
-	if (function_exists($callback)) {
-		$args = sneeit_get_server_request('args');
-		$args = json_decode( trim( wp_unslash( $args ) ), true );
-		$args['block_id'] = 'sneeit-menu-mega-content-'.$args['item_id'];	
-		echo call_user_func($callback, $args);
+	global $Sneeit_Setup_Compact_Menu_Args;
+
+	$request_args = sneeit_get_server_request('args');
+	if (!is_string($request_args)) {
+		die();
 	}
+	$request_args = json_decode(trim(wp_unslash($request_args)), true);
+	if (!is_array($request_args) || !isset($request_args['location']) || !is_string($request_args['location'])) {
+		die();
+	}
+
+	$location = $request_args['location'];
+	if (!isset($Sneeit_Setup_Compact_Menu_Args[$location]['mega_block_display_callback'])) {
+		die();
+	}
+	$callback = $Sneeit_Setup_Compact_Menu_Args[$location]['mega_block_display_callback'];
+	if (!is_string($callback) || !function_exists($callback)) {
+		die();
+	}
+
+	$args = array(
+		'categories' => isset($request_args['categories']) ? absint($request_args['categories']) : 0,
+		'menu_item_id' => isset($request_args['menu_item_id']) ? absint($request_args['menu_item_id']) : 0,
+		'has_children' => !empty($request_args['has_children']),
+		'location' => $location,
+	);
+	$args['block_id'] = 'sneeit-menu-mega-content-'.$args['menu_item_id'];
+	echo call_user_func($callback, $args);
 	die();
 }
